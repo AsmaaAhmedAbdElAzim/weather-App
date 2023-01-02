@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+          </div>
+        </div>
+      </nav> -->
+      <header >
+        <div class="layout">
+          <div class="containerBody text-center">
+            <h1 class="text-light py-5">weather appilcation</h1>
+          
+            <div class="search-container position-relative d-flex justify-content-center align-items-center w-75 m-auto">
+              <div class="search-icon position-absolute">
+                <i class="fa-solid fa-magnifying-glass "></i>
+              </div>
+              <div class="search-input w-75">
+                <input type="text" placeholder="Search" class="form-control ps-4  d-inline text-white " id="searchInput" >
+              </div>
+              <div class=" close-icon position-absolute">
+                <i class="fa-regular fa-circle-xmark " id="close-icon"></i>
+              </div>
+              <div class="searchBtnContainer">
+                <span><button class="btn " id="searchButn">Search</button></span>
+              </div>
+               
+            </div>
+           
+            <div class="containerTemb mt-5 w-75 m-auto text-light d-none">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="crad">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="bodyCrad py-5 ">
+                          <h1 class="d-inline fw-bolder fa-5x text-center " id="high-temp">
+                            
+                          </h1>
+                          <img  id ='iconCuttentTemp' >
+                            
+                          
+                        <h4 id="country" class="fw-bolder fa-3x pt-4 text-start ps-5 text-capitalize"></h4>
+                        
+
+                          <div class="headerCrad   text-start ps-5 ">
+                        <div class="day py-3 "><h6 class="fw-bolder text-uppercase"></h6></div>
+                        <div class="history"><h6 class=" fw-bolder"></h6></div>
+                      </div> 
+                      </div>
+                      </div>
+                      
+                      <div class="col-md-4 py-5  ">
+                        <h2 class="currentDescrip pb-5 fw-bolder text-capitalize text-start"></h2>
+                        <div class="footerCrad  pt-5 px-4 d-flex justify-content-between align-items-center">
+                          <div class="foot py-4">
+                            <i class="fa-solid fa-umbrella"></i>
+                            <p  class="d-inline currentHumidity "></p>
+                          </div>
+                          <div class="foot py-4">
+                            <i class="fa-solid fa-wind"></i>
+                            <p  class="d-inline currentWind">
+
+                            </p>
+                          </div>
+                          <div class="foot py-4">
+                            <i class="fa-brands fa-edge"></i>
+                            <p class="d-inline whereWind"></p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row otherDayes">
+                      <div class="col-md-4 ">
+
+                      </div>
+                      <div class="col-md-4 px-3 ">
+                        <div class="head-card-othee-days px-5 ">
+                          <div class="day1"><h6></h6></div>
+                          <div class="history1"><h6></h6></div>
+                        </div>
+                        <div class="bodyCrad py-5 position-relative">
+                          <img class="icon1">
+
+                          
+                          <h1 class="temLarge1">
+                            
+                          </h1>
+                          <h4 class="temSmall1">
+                            
+                           </h4>
+                          <p class="discreption1"></p>
+                          <div class="line position-absolute"></div>
+                        </div>
+                        
+                      </div>
+                      <div class="col-md-4 px-3 otherday">
+                        <div class="head-card-othee-days px-3 ">
+                          <div class="day2"><h6></h6></div>
+                          <div class="history2"><h6></h6></div>
+                        </div>
+                        <div class="bodyCrad py-5 position-relative">
+                          <img class="icon2">
+
+                          
+                          <h1 class="temLarge2">
+                            
+                          </h1>
+                          <h6 class="temSmall2">
+                             
+                          </h6>
+                          <p class="discreption2">
+
+                          </p>
+                          <div class="line position-absolute"></div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-md-3">
+                        <div class="head-card-othee-days px-3 ">
+                          <div class="day3"><h6></h6></div>
+                          <div class="history3"><h6></h6></div>
+                        </div>
+                        <div class="bodyCrad py-5 position-relative">
+                          <img class="icon3">
+
+                         
+                          <h1 class="temLarge3">
+                            
+                          </h1>
+                          <h6 class="temSmall3">
+                            
+                          </h6>
+                          <p class="discreption3">
+
+                          </p>
+                          
+                        </div>
+                      </div> -->
+                      
+                    </div>
+                      <!-- <div class="headerCrad bg-black d-flex justify-content-between align-items-center">
+                        <div class="day"><h6></h6></div>
+                        <div class="history"><h6></h6></div>
+                      </div>
+                      <div class="bodyCrad py-5 ">
+                        <h4 id="country"></h4>
+                        <h1 class="d-inline" id="high-temp"><sup>o</sup></h1>
+                        <div class="d-inline"><span> C </span> </div> 
+                        <i  id ='iconCuttentTemp' ></i>
+                        <p id="currentDescrip"></p>
+                        <div class="footerCrad d-flex justify-content-between align-items-center pt-5 px-4">
+                          <div class="foot">
+                            <i class="fa-solid fa-umbrella"></i>
+                            <p  class="d-inline currentHumidity "></p>
+                          </div>
+                          <div class="foot">
+                            <i class="fa-solid fa-wind"></i>
+                            <p  class="d-inline currentWind"></p>
+                          </div>
+                          <div class="foot">
+                            <i class="fa-brands fa-edge"></i>
+                            <p class="d-inline">spead</p>
+                          </div>
+                        </div>
+                      </div> -->
+                  </div>
+                </div>
+                <!-- <div class="col-md-4">
+                  <div class="crad">
+                      <div class="headerCrad bg-black d-flex justify-content-between align-items-center">
+                        <div class="day"><h6>Wensday</h6></div>
+                        <div class="history"><h6>10/11</h6></div>
+                      </div>
+                      <div class="bodyCrad py-5 ">
+                        <i class="fa-regular fa-sun"></i>
+                        <h1>15<sup>o</sup> C </h1>
+                        <h6>15<sup>o</sup> C </h6>
+                        <p>clear</p>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="crad">
+                      <div class="headerCrad bg-black d-flex justify-content-between align-items-center">
+                        <div class="day"><h6>Wensday</h6></div>
+                        <div class="history"><h6>10/11</h6></div>
+                      </div>
+                      <div class="bodyCrad py-5 ">
+                        <i class="fa-regular fa-sun"></i>
+                        <h1>15<sup>o</sup> C </h1>
+                        <h6>15<sup>o</sup> C </h6>
+                        <p>clear</p>
+                        
+                      </div>
+                  </div>
+                </div>
+                
+              </div> -->
+     
+            </div>
+        </div>
+        </div>
+      </header>
+      
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+header{
+    background-image: url(../img/4Z_2104.w028.n002.36B.p30.36.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.layout{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.search-icon{
+    left: 95px;
+    color: rgb(53, 219, 248);
+    cursor: pointer;
+   
+}
+.close-icon{
+    right: 168px;
+    color: rgb(53, 219, 248);
+    padding-right: 12px;
+    cursor: pointer;
+}
+.search-input input{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    padding-left: 35px !important;
+}
+.search-input input:focus,.search-input input:active{
+    border-color: rgb(53, 219, 248) ;
+    background-color: transparent;
+}
+#searchButn{
+    background-color:  rgb(53, 219, 248);
+    border: 1px solid  rgb(53, 219, 248);
+    color: white;
+    margin-left: 18px;
+
+}
+#searchButn:hover{
+    background-color: transparent;
+    color:rgb(53, 219, 248) ;
+}
+.containerTemb{
+    background-color:rgb(141, 223, 237,0.7) ;
+    
+}
+.line{
+    width: 1px !important;
+    height: 80px !important; 
+   border: 1px solid rgb(53, 219, 248);
+    background-color:  rgb(53, 219, 248);
+    bottom: 73px;
+    left: 100%;
+}
+.head-card-othee-days{
+    background-color:  rgb(53, 219, 248) !important;
+}
